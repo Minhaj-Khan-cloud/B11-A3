@@ -18,12 +18,28 @@
         font-family: "Sora", serif;
      }
    </style>
+   <!-- tailwind customization -->
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            color1: '#459800',
+            color2: '#EFEBE3',
+          }
+        }
+      }
+    }
+  </script>
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/fa229ff9ab.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="font-sora">
-    <header >
-         <nav class="lg:w-[90%] lg:ml-36">
-            <div class="navbar bg-base-100 ">
+    <header class="bg-color2">
+         <nav class="lg:w-[90%] lg:ml-32 bg-color2">
+            <div class="navbar  ">
                 <div class="navbar-start space-x-32">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost flex-row-reverse  lg:hidden">
@@ -42,11 +58,10 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      class="menu menu-sm dropdown-content bg-color2 rounded-box z-[1] mt-3 w-52 p-2 shadow text-2xl">
                       <li><a>Product</a></li>
                       <li>
                         <a>Service</a>
-                       
                       </li>
                       <li><a>Contact Us</a></li>
                     </ul>
@@ -54,26 +69,44 @@
                   <img src="./c2-assets/logo-header.png">
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
+                  <ul class="menu menu-horizontal px-1 text-2xl">
                     <li><a>product</a></li>
                     <li>
-                      <details>
-                        <summary>service</summary>
-                      
-                      </details>
+                      <a>
+                         service
+                      </a>
+                     
+                    
                     </li>
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end invisible lg:visible">
-                  <a class="btn ">Log in</a>
-                  <a class="btn ">Register</a>
+                <div class="navbar-end invisible lg:visible lg:gap-3">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <a class="btn bg-white text-black rounded-xl border-green-700 text-center ">Log in</a>
+                  <a class="btn bg-color1 text-center ">Register</a>
                 </div>
               </div>
          </nav>
+         <section>
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="lg:max-w-4xl lg:mt-24">
+                <h1 class="text-5xl font-bold">Freshness <span class="text-color1">You Can
+                  Count</span> On, Prices You’ll Love!</h1>
+                <p class="py-6">
+                  PShop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+                <img src="./c2-assets/hero-vegetables.png">
+              </div>
+            </div>
+          </div>
+         </section>
     </header>
     <main>
-
+  
+      
     </main>
     <footer>
 
